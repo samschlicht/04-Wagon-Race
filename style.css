@@ -1,0 +1,57 @@
+/* Your board style here */
+@font-face {
+    font-family: Mario-Kart;
+    src: url("./Fonts/Mario-Kart-DS.ttf");
+}
+
+h1 {
+    font-family: Mario-Kart;
+}
+
+.img {
+    display: inline-block;
+    }
+
+.container {
+    text-align: center;
+}
+
+.racer-table td {
+    height: 100px;
+    width: 100px;
+}
+.racer-table td.active {
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#player1-race td.active {
+    background-image: url("images/images.jpeg");
+    background-size: 100%;
+}
+#player2-race td.active {
+    background-image: url("images/yoshi.jpeg");
+    background-size: 100%;
+}
+
+td.inactive {
+    background-image: url("images/finish.png");
+}
+
+#peach, #yoshi {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
