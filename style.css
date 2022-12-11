@@ -34,6 +34,8 @@ h1 {
 
 td.inactive {
     background-image: url("images/finish.png");
+    background-size: 117%;
+    background-position: 50% 50%;
 }
 
 #peach, #yoshi {
@@ -57,9 +59,15 @@ td.inactive {
 
 .goldStar{
     animation: key1 .3s ease infinite alternate;
+    cursor: pointer;
 }
 
 @keyframes key1{
     0% {transform: translateY(0px);}
     100% {transform: translateY(-10px);}
+}
+
+#intro {
+    background-image: url("images/grass.png");
+    color: black;
 }
