@@ -101,6 +101,7 @@ const dividers = document.querySelectorAll("hr");
 const audio = new Audio("Audio/mario_music.m4a");
 const trafficLight = new Audio("Audio/Traffic light.m4a");
 const intro = document.querySelector("#intro");
+const goldStar = document.querySelector("#gold-star")
 
 function playAudio(url) {
   new Audio(url).play();
@@ -126,12 +127,12 @@ document.addEventListener("keyup", (event) => {
   } else if (peachPosition === 0) {
     entireTrack.remove();
     dividers.forEach(divider => divider.remove());
-    container.insertAdjacentHTML("beforeend", "<br><br><img src='images/peachwin.png' id='peach'></img><h1>PEACH WINS!!!<br><img style='width: 100px' src='images/goldstar.png'></img><br>REFRESH THE PAGE TO GO AGAIN</h1><br><br>");
+    container.insertAdjacentHTML("beforeend", "<br><br><img src='images/peachwin.png' id='peach'></img><h1>PEACH WINS!!!<br><br><img class='goldStar' style='width: 100px' src='images/goldstar.png'></img><br>REFRESH THE PAGE TO GO AGAIN</h1><br><br>");
     audio.play();
   } else if (yoshiPosition === 0) {
     entireTrack.remove();
     dividers.forEach(divider => divider.remove());
-    container.insertAdjacentHTML("beforeend", "<br><br><img id='yoshi' src='images/yoshiwins.jpeg'></img><h1>YOSHI WINS!!!<br><img style='width: 100px' src='images/goldstar.png'></img><br>REFRESH THE PAGE TO GO AGAIN</h1><br><br>");
+    container.insertAdjacentHTML("beforeend", "<br><br><img id='yoshi' src='images/yoshiwins.jpeg'></img><h1>YOSHI WINS!!!<br><br><img class='goldStar' style='width: 100px' src='images/goldstar.png'></img><br>REFRESH THE PAGE TO GO AGAIN</h1><br><br>");
     audio.play();
   }
 });

@@ -54,3 +54,12 @@ td.inactive {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+.goldStar{
+    animation: key1 .3s ease infinite alternate;
+}
+
+@keyframes key1{
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-10px);}
+}
