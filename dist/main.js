@@ -152,10 +152,10 @@ document.addEventListener("click", (event) => {
   trafficLight.play();
   grassVerge.innerHTML = "<br><br><h1>GET READY!</h1>";
   setTimeout(() => {
-    grassVerge.innerHTML = "<br><br><h1>SET</h1>";
+    grassVerge.innerHTML = "<br><br><br><br><h1>SET...</h1>";
   }, 2000);
   setTimeout(() => {
-    grassVerge.innerHTML = "<br><br><h1>GO!!!</h1>";
+    grassVerge.innerHTML = "<br><br><br><br><br><br><h1 style='color: ghostwhite'>GO!!!</h1>";
     race();
   }, 4000);
 }, { once: true });
